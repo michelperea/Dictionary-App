@@ -10,7 +10,7 @@ Created with HTML, CSS and JavaScript.
 ## Project preview
 If you want to take a look at the project, I recommend you:
 
-
+https://ricardoperea.github.io/Dictionary-App/
 
 ## Installation 
 This project does not require installation, just click on the link above and you will be directed to the site.
