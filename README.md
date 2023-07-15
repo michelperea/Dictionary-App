@@ -2,17 +2,17 @@ Food Delivery Site project.
 Created with HTML, CSS and JavaScript.
 
 ## Author ✒️
-**Ricardo Perea**
+**Michel Perea**
 
-* [LinkedIn](https://www.linkedin.com/in/ricardo-perea/)
+* [LinkedIn](https://www.linkedin.com/in/michel-perea/)
 
 
 ## Project preview
 If you want to take a look at the project, I recommend you:
 
-https://ricardoperea.github.io/Dictionary-App/
+https://michelperea.github.io/Dictionary-App/
 
 ## Installation 
 This project does not require installation, just click on the link above and you will be directed to the site.
 
-## If you want to hire me you can write me at: aztro812@hotmail.com for inquiries.
+## If you want to hire me you can write me at: ing_michel_@hotmail.com for inquiries.
