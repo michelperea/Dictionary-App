@@ -8,7 +8,7 @@
 
 /* Estilos del cuerpo de la página */
 body {
-    background-image: url('/background_dictionary_app.jpg');
+    background-image: url('background_dictionary_app.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -17,6 +17,7 @@ body {
     background-color: black;
     min-height: 100vh;
 }
+
 
 /* Estilos del contenedor principal */
 .wrapper {
