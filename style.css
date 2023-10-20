@@ -1,25 +1,8 @@
-/* Estilos generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-/* Estilos del cuerpo de la página */
+/* Estilos personalizados */
 body {
-    background-image: url('fondo.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    min-height: 100vh;
+    background-color: #f0f0f0; /* Cambiar el color de fondo */
 }
 
-
-/* Estilos del contenedor principal */
 .wrapper {
     width: 350px;
     border-radius: 18px;
@@ -35,161 +18,35 @@ body {
     font-weight: 500;
     text-align: center;
     font-family: fantasy;
+    margin-bottom: 20px; /* Espacio entre el encabezado y la barra de búsqueda */
 }
 
-/* Estilos de la barra de búsqueda */
-.wrapper .search {
-    margin: 35px 0 18px;
-    position: relative;
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Espacio entre la barra de búsqueda y el texto informativo */
 }
 
 .search input {
+    flex: 1; /* Ocupa el espacio disponible */
     height: 53px;
-    width: 100%;
     outline: none;
     border: 3px solid black;
     border-radius: 5px;
     font-size: 24px;
-    padding: 0 42px;
-    font-family: sans-serif;
+    padding: 0 15px; /* Ajusta el espacio entre el icono de búsqueda y el borde */
 }
 
-.search :where(i, span) {
-    position: absolute;
-    top: 50%;
-    color: #999;
-    transform: translateY(-50%);
-}
-
-search input::placeholder {
-    color: #b8b8b8;
-}
-
-search input:focus {
-    border: 2px solid #4d59fb;
-    padding: 0 41px;
-}
-
-search i {
-    left: 18px;
-    font-size: 16px;
-    pointer-events: none;
-}
-
-search input:focus ~ i {
-    color: #4d59fb;
-}
-
-search span {
-    right: 15px;
+.search i {
+    font-size: 24px;
+    padding: 10px; /* Ajusta el espacio alrededor del icono de búsqueda */
     cursor: pointer;
-    font-size: 18px;
-    display: none;
 }
 
-search input:valid ~ span {
-    display: block;
-}
-
-/* Estilos de la lista de resultados */
-.wrapper ul li {
-    display: flex;
-    margin-bottom: 14px;
-    padding-bottom: 17px;
-    border-bottom: 1px solid #ccc;
-    justify-content: space between;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-ul .word p {
-    font-size: 30px;
-    font-weight: 700;
-    font-family: sans-serif;
-    color: white;
-}
-
-/* Estilos de la información de la palabra */
-.wrapper .info-text {
+.info-text {
     font-size: 15px;
     color: black;
     margin: -3px 0 -10px;
     font-family: fantasy;
-}
-
-/* Estilos de la lista de resultados (mostrada y oculta) */
-.wrapper ul {
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-ul .word i {
-    cursor: pointer;
-    font-size: 15px;
-    color: black;
-}
-
-/* Estilos del último elemento de la lista */
-ul li:last-child {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    border-bottom: 0px;
-}
-
-/* Estilos de los detalles de la palabra */
-content li .details {
-    border-left: 3px solid #4d59fb;
-    border-radius: 4px 0 0 4px;
-    padding-left: 10px;
-}
-
-content li .details p {
-    font-size: 24px;
-    color: white;
-    font-family: sans-serif;
-}
-
-/* Estilos de la lista de sinónimos */
-synonyms .details .list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-synonyms .details .list span {
-    margin-right: 5px;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-/* Estilos del mensaje de información */
-info-text span {
-    font-weight: 900;
-    color: red;
-}
-
-/* Estilos de la lista de resultados cuando está activa */
-.wrapper.active ul {
-    height: 303px;
-    opacity: 1;
-}
-
-.wrapper.active ul {
-    display: block;
-}
-
-.wrapper.active .info-text {
-    display: none;
-}
-
-/* Estilos de la barra de desplazamiento (scrollbar) */
-ul .content {
-    max-height: 215px;
-    overflow-y: auto;
-}
-
-ul .content::-webkit-scrollbar {
-    width: 0px;
 }
