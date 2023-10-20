@@ -7,7 +7,7 @@
 }
 
 /* Estilos del cuerpo de la página */
-body {
+/* body {
     background-image: url('fondo-app.svg');
     background-color: black;
     background-size: cover;
@@ -16,6 +16,16 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+ }  */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+    background-color: white;
 }
 
 .container {
