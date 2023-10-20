@@ -1,136 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-body {
-    background-image: url('/background_dictionary_app.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: image();
-    min-height: 100vh;
-}
-
-.wrapper {
-    width: 350px;
-    border-radius: 18px;
-    padding: 28px 28px;
-    background-color: royalblue;
-    color: black;
-    font-family: auto;
-    border: solid;
-}
-.wrapper header {
-    font-size: 33px;
-    font-weight: 500;
-    text-align: center;
-    font-family: fantasy;
-}
-.wrapper .search {
-    margin: 35px 0 18px;
-    position: relative;
-}
-.search input {
-    height: 53px;
-    width: 100%;
-    outline: none;
-    border: 3px solid black;
-    border-radius: 5px;
-    font-size: 24px;
-    padding: 0 42px;
-    font-family: sans-serif;
-}
-.search :where(i, span) {
-    position: absolute;
-    top: 50%;
-    color: #999;
-    transform: translateY(-50%);
-}
-.search input::placeholder{
-    color: #b8b8b8;
-}
-.search input:focus{
-    border: 2px solid #4d59fb;
-    padding: 0 41px;
-}
-.search i {
-    left: 18px;
-    font-size: 16px;
-    pointer-events: none;
-}
-.search  input:focus  ~ i {
-    color: #4d59fb;
-}
-.search span {
-    right: 15px;
-    cursor: pointer;
-    font-size: 18px;
-    display: none;
-}
-.search input:valid ~ span {
-    display: block;
-}
-.wrapper ul li{
-    display: flex;
-    margin-bottom: 14px;
-    padding-bottom: 17px;
-    border-bottom: 1px solid #ccc;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 600;
-}
-ul .word p{
-    font-size: 30px;
-    font-weight: 700;
-    font-family: auto;
-    color: white;
-}
-.wrapper .info-text {
-    font-size: 15px;
-    color: black;
-    margin: -3px 0 -10px;
-    font-family: fantasy;
-}
-
-.wrapper ul {
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-ul .word i {
-    cursor: pointer;
-    font-size: 15px;
-    color: black;
-}
-ul li:last-child{
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    border-bottom: 0px;
-}
-.content li .details{
-    border-left: 3px solid #4d59fb;
-    border-radius: 4px 0 0 4px;
-    padding-left: 10px;
-}
-.content li .details p {
-    font-size: 24px;
-    color: white;
-    font-family: auto;
-}
-.synonyms .details .list {
-    display: flex;
-    flex-wrap: wrap;
-}
-.synonyms .details .list span {
-    margin-right: 5px;
-    text-decoration: underline;
-    cursor: pointer;/* Estilos generales */
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -141,12 +9,12 @@ ul li:last-child{
 /* Estilos del cuerpo de la página */
 body {
     background-image: url('/background_dictionary_app.jpg');
-    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: black;
     min-height: 100vh;
 }
 
@@ -192,33 +60,33 @@ body {
     transform: translateY(-50%);
 }
 
-.search input::placeholder {
+search input::placeholder {
     color: #b8b8b8;
 }
 
-.search input:focus {
+search input:focus {
     border: 2px solid #4d59fb;
     padding: 0 41px;
 }
 
-.search i {
+search i {
     left: 18px;
     font-size: 16px;
     pointer-events: none;
 }
 
-.search input:focus ~ i {
+search input:focus ~ i {
     color: #4d59fb;
 }
 
-.search span {
+search span {
     right: 15px;
     cursor: pointer;
     font-size: 18px;
     display: none;
 }
 
-.search input:valid ~ span {
+search input:valid ~ span {
     display: block;
 }
 
@@ -228,7 +96,7 @@ body {
     margin-bottom: 14px;
     padding-bottom: 17px;
     border-bottom: 1px solid #ccc;
-    justify-content: space-between;
+    justify-content: space between;
     align-items: center;
     font-size: 18px;
     font-weight: 600;
@@ -271,32 +139,32 @@ ul li:last-child {
 }
 
 /* Estilos de los detalles de la palabra */
-.content li .details {
+content li .details {
     border-left: 3px solid #4d59fb;
     border-radius: 4px 0 0 4px;
     padding-left: 10px;
 }
 
-.content li .details p {
+content li .details p {
     font-size: 24px;
     color: white;
     font-family: sans-serif;
 }
 
 /* Estilos de la lista de sinónimos */
-.synonyms .details .list {
+synonyms .details .list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.synonyms .details .list span {
+synonyms .details .list span {
     margin-right: 5px;
     text-decoration: underline;
     cursor: pointer;
 }
 
 /* Estilos del mensaje de información */
-.info-text span {
+info-text span {
     font-weight: 900;
     color: red;
 }
@@ -324,27 +192,3 @@ ul .content {
 ul .content::-webkit-scrollbar {
     width: 0px;
 }
-
-}
-.info-text span{
-    font-weight: 900;
-    color: red;
-}
-.wrapper.active ul {
-    height: 303px;
-    opacity: 1;
-}
-.wrapper.active ul{
-    display: block;
-}
-.wrapper.active .info-text {
-    display: none;
-}
-ul .content {
-    max-height: 215px;
-    overflow-y: auto;
-}
-ul .content::-webkit-scrollbar{
-    width: 0px;
-}
-
