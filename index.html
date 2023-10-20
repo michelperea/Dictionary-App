@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Dictionary App</title>
+    <title>Aplicación de Diccionario</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,16 +12,19 @@
     <!-- Contenedor principal para todo el contenido -->
     <div class="wrapper">
         <!-- Encabezado para el diccionario -->
-        <header>English Dictionary</header>
+        <header>Diccionario de Inglés</header>
         
         <!-- Barra de búsqueda para buscar palabras -->
         <div class="search">
-            <input type="text" placeholder="Search for a word:">
+            <input type="text" placeholder="Buscar una palabra:">
             <!-- Icono para el botón de búsqueda -->
             <i class="fas fa-search"></i>
-            <!-- Texto informativo -->
-            <p class="info-text" style="color: black;">Enter a word and press Enter</p>
+            <!-- Icono para borrar la búsqueda -->
+            <span class="material-icons">close</span>
         </div>
+        
+        <!-- Texto informativo -->
+        <p class="info-text" style="color: black;">Escribe una palabra y presiona Enter</p>
         
         <!-- Lista para mostrar los detalles de la palabra -->
         <ul>
@@ -38,7 +41,7 @@
                 <!-- Significado de la palabra -->
                 <li class="meaning">
                     <div class="details">
-                        <p>Meaning</p>
+                        <p>Significado</p>
                         <span>___</span>
                     </div>
                 </li>
@@ -46,14 +49,14 @@
                 <div class="example">
                     <li class="meaning">
                         <div class="details">
-                            <p>Example</p>
+                            <p>Ejemplo</p>
                             <span>___</span>
                         </div>
                     </li>
                     <!-- Sinónimos de la palabra -->
                     <div class="synonyms">
                         <div class="details">
-                            <p>Synonyms</p>
+                            <p>Sinónimos</p>
                             <div class="list"></div>
                         </div>
                     </div>
