@@ -6,7 +6,6 @@
 }
 body {
     background-image: url('/background_dictionary_app.jpg');
-    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
