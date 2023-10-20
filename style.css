@@ -18,6 +18,19 @@ body {
     min-height: 100vh;
 }
 
+h1 {
+    font-size: 9%;
+    text-aling: center;
+    font-weight: bold:
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 9%;
+    font-weight: bold:
+    font-family: auto;
+}
+
 /* Estilos del contenedor principal */
 .wrapper {
     width: 350px;
