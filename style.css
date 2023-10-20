@@ -19,10 +19,14 @@ body {
 }
 
 h3 {
-    font-size: 21%;
-    text-aling: center;
-    font-weight: bold:
+    font-size: 24px;
+    text-align: center; /* Corregido "text-aling" a "text-align" */
+    font-weight: bold; /* Corregido el uso de ":" por ";" al final de "font-weight" */
     font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Añadido para centrar en la parte inferior de la página */
 }
 
  h2 {
