@@ -23,10 +23,11 @@ body {
     width: 350px;
     border-radius: 18px;
     padding: 28px;
-    background-color: royalblue;
+    background-color: #13a8fe;
     color: black;
     font-family: sans-serif;
     border: solid;
+    margin: 10% 0% 21% 0%;
 }
 
 .wrapper header {
