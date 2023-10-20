@@ -25,6 +25,14 @@ h1 {
     font-family: sans-serif;
 }
 
+ h2 {
+     text-align: center;
+     color: white;
+     font-family: sans;
+     font-weight: bold;
+     font-size: 21px;
+}
+
 p.info-text {
     font-size: 9%;
     font-weight: bold:
