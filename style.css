@@ -46,7 +46,7 @@ h3 {
     height: 100vh; /* Añadido para centrar en la parte inferior de la página */
 }
 
- h2 {
+ h2.info-text {
      text-align: center;
      color: white;
      font-family: sans;
