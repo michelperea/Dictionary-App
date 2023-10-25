@@ -1,72 +1,53 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Dictionary Application</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <meta name="viewport" content="width-device=width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body> 
-    <!-- Contenedor principal para todo el contenido -->
     <div class="wrapper">
-        <!-- Encabezado para el diccionario -->
-        <h1>English Dictionary</h1>
-        
-        <!-- Barra de búsqueda para buscar palabras -->
+        <header>English Dictionary</header>
         <div class="search">
-            <input type="text" placeholder="Search for a word:">
-            <!-- Icono para el botón de búsqueda -->
+            <input type="text" placeholder="Search a word:">
             <i class="fas fa-search"></i>
-            <!-- Icono para borrar la búsqueda -->
             <span class="material-icons">close</span>
         </div>
-        
-        <!-- Texto informativo -->
-        <h2 class="info-text" style="color: black;">Enter a word and press Enter</h2>
-        
-        <!-- Lista para mostrar los detalles de la palabra -->
+        <p class="info-text" style="color: black;">Type a word and press enter</p>
         <ul>
             <li class="word">
                 <div class="details">
                     <p>_</p>
                     <span>___</span>
                 </div>
-                <!-- Icono para la pronunciación de la palabra -->
                 <i class="fas fa-volume-up"></i>
             </li>
-            <!-- Contenedor para mostrar significados, ejemplos, y sinónimos de la palabra -->
             <div class="content">
-                <!-- Significado de la palabra -->
                 <li class="meaning">
                     <div class="details">
                         <p>Meaning</p>
                         <span>___</span>
                     </div>
                 </li>
-                <!-- Ejemplo de uso de la palabra -->
                 <div class="example">
-                    <li class "meaning">
+                    <li class="meaning">
                         <div class="details">
                             <p>Example</p>
                             <span>___</span>
                         </div>
                     </li>
-                    <!-- Sinónimos de la palabra -->
                     <div class="synonyms">
-                        <div class "details">
+                        <div class="details">
                             <p>Synonyms</p>
                             <div class="list"></div>
-                        </div>
                     </div>
-                </div>
             </div>
         </ul>
     </div>
-   <div class="container">
-        <h3>Michel Colín Perea</h3>
-    </div>
-    <script src="script.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
